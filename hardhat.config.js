@@ -11,9 +11,7 @@ require("dotenv")
 const GOERLI_RPC_URL =
     process.env.GOERLI_RPC_URL ||
     "https://eth-goerli.g.alchemy.com/v2/sGkCMgQLpZUCcpULB_z8dRinV7UD50wt"
-const PRIVATE_KEY =
-    process.env.PRIVATE_KEY ||
-    "0x31affef35ae9c726887bb578e664fc35b6637b594b3fb25890c6a81a414e2df6"
+const PRIVATE_KEY = process.env.PRIVATE_KEY || ""
 const COINMARKETCAP_API_KEY =
     process.env.COINMARKETCAP_API_KEY ||
     "0x503ac82e-b2e7-4699-9c82-5780bf02d8d8"
