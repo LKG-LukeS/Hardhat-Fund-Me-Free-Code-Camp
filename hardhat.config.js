@@ -11,7 +11,7 @@ require("dotenv")
 const GOERLI_RPC_URL =
     process.env.GOERLI_RPC_URL ||
     "https://eth-goerli.g.alchemy.com/v2/sGkCMgQLpZUCcpULB_z8dRinV7UD50wt"
-const PRIVATE_KEY = process.env.PRIVATE_KEY || ""
+const PRIVATE_KEY = process.env.PRIVATE_KEY
 const COINMARKETCAP_API_KEY =
     process.env.COINMARKETCAP_API_KEY ||
     "0x503ac82e-b2e7-4699-9c82-5780bf02d8d8"
@@ -67,7 +67,7 @@ module.exports = {
     networks: {
         goerli: {
             url: GOERLI_RPC_URL,
-            accounts: [PRIVATE_KEY],
+            accounts: PRIVATE_KEY,
             chainId: 5,
             blockConfirmations: 6,
         },
